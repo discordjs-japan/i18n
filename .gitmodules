@@ -1,0 +1,12 @@
+[submodule "discord.js"]
+	path = source/discord.js
+	url = https://github.com/discordjs/discord.js.git
+	branch = docs
+[submodule "Commando"]
+	path = source/Commando
+	url = https://github.com/discordjs/Commando.git
+	branch = docs
+[submodule "RPC"]
+	path = source/RPC
+	url = https://github.com/discordjs/RPC.git
+	branch = docs
