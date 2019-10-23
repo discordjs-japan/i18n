@@ -1,11 +1,14 @@
+// allow specify unknown properties in object literal
+type Object<T> = T & { [others: string]: any; }
+
 export interface Custom {
   name: string // category name
-  files: {
-    [id: string]: {
+  files: Object<{
+    [id: string]: Object<{
       name: string // page name
       content: string // markdown
-    }
-  }
+    }>
+  }>
 }
 
 export interface Prop {
@@ -14,54 +17,56 @@ export interface Prop {
 
 export interface Class {
   description?: string // description
-  construct?: {
-    params?: Array<{
+  construct?: Object<{
+    params?: Array<Object<{
       description?: string // description
-    }>
-  }
-  props?: Array<{
+    }>>
+  }>
+  props?: Array<Object<{
     description: string // description
-  }>
-  methods?: Array<{
+  }>>
+  methods?: Array<Object<{
     description?: string // description
-    params?: Array<{
+    params?: Array<Object<{
       description: string // description
-    }>
-  }>
-  events?: Array<{
+    }>>
+  }>>
+  events?: Array<Object<{
     description?: string // description
-    params?: Array<{
+    params?: Array<Object<{
       description?: string // description
-    } | {}>
-  }>
+    }>>
+  }>>
 }
 
 export interface Interface {
   description: string // description
-  props?: Array<{
+  props?: Array<Object<{
     description: string // description
-  }>
-  methods: Array<{
+  }>>
+  methods: Array<Object<{
     description: string // description
     examples?: string[] // examples
-    params?: Array<{
+    params?: Array<Object<{
       description: string // description
-    }>
-  }>
+    }>>
+  }>>
 }
 
 export interface Typedef {
   description?: string // description
-  props?: Array<{
+  props?: Array<Object<{
     description: string // description
-  }>
+  }>>
 }
 
 export interface Document {
+  meta: Object<{}>
   custom: {
-    [id: string]: Custom
+    [id: string]: Object<Custom>
   }
-  classes: Class[]
-  interfaces: Interface[]
-  typedefs: Typedef[]
+  classes: Object<Class>[]
+  interfaces: Object<Interface>[]
+  typedefs: Object<Typedef>[]
+  externals: Object<{}>
 }

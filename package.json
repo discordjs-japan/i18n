@@ -1,12 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "generate": "ts-node script/generate.ts"
+    "generate": "ts-node script/generate.ts",
+    "test": "npm-run-all test-type",
+    "test-type": "tsc --noEmit script/test/document-types.ts"
   },
   "dependencies": {
     "del": "^5.1.0",
     "glob": "^7.1.5",
-    "make-dir": "^3.0.0"
+    "make-dir": "^3.0.0",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
     "@types/node": "^12.11.6",
