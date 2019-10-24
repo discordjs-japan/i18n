@@ -1,0 +1,7 @@
+files:
+  - source: /content/en-US/docs/discord.js/*.json
+    translation: /content/%locale%/docs/discord.js/%original_file_name%
+  - source: /content/en-US/docs/Commando/*.json
+    translation: /content/%locale%/docs/Commando/%original_file_name%
+  - source: /content/en-US/docs/RPC/*.json
+    translation: /content/%locale%/docs/RPC/%original_file_name%
