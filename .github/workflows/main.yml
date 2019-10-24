@@ -20,8 +20,10 @@ jobs:
       run: yarn install
     - name: Update source
       run: yarn update
-    - name: Generate content
-      run: yarn generate
+    - name: Build content
+      run: yarn build
+      env:
+        CROWDIN_APIKEY: ${{ secrets.CROWDIN_APIKEY }}
     - name: Commit changes
       run: |
         git add content
