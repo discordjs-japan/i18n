@@ -14,9 +14,16 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+    - name: Set git config
+      run: |
+        git config --local user.name "Discord.js Japan Bot"
+        git config --local user.email "44521+discord-js-japan-bot[bot]@users.noreply.github.com"
     - name: Install dependencies
       run: yarn install
     - name: Update source
       run: yarn update
     - name: Generate content
       run: yarn generate
+    - name: Push commits
+      run: |
+        git push https://x-access-token:${{ secrets.TOKEN }}@github.com/discordjs-japan/i18n.git
