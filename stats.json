@@ -3,13 +3,14 @@
     "name": "Japanese",
     "code": "ja",
     "phrases": "72722",
-    "translated": "70",
+    "translated": "71",
     "approved": "0",
     "words": "776560",
-    "words_translated": "1204",
+    "words_translated": "1208",
     "words_approved": "0",
     "translated_progress": 0,
     "approved_progress": 0,
-    "qa_issues": 3
+    "qa_issues": 3,
+    "path": "ja-JP"
   }
 ]
