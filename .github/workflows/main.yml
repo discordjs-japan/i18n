@@ -27,4 +27,7 @@ jobs:
         git add content
         git commit -m "auto: Update source content"
     - name: Push commits
-      run: git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/discordjs-japan/i18n.git HEAD
+      run: |
+        CRED="x-access-token:${{ secrets.GITHUB_TOKEN }}"
+        REMOTE="https://${CRED}@github.com/${GITHUB_REPOSITORY}.git"
+        git push $REMOTE HEAD:master
