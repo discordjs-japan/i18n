@@ -10,5 +10,5 @@ main()
 async function main() {
   await git.submoduleUpdate(['--init', '--remote'])
   await git.add('source')
-  await git.commit('auto: Update source content')
+  await git.commit('auto: Update source')
 }
