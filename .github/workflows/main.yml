@@ -26,7 +26,7 @@ jobs:
         CROWDIN_APIKEY: ${{ secrets.CROWDIN_APIKEY }}
     - name: Commit changes
       run: |
-        git add content
+        git add .
         git commit -m "auto: Update source content"
     - name: Push commits
       run: |
