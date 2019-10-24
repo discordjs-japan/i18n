@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  update:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install dependencies
+      run: yarn install
+    - name: Update source
+      run: yarn update
+    - name: Generate content
+      run: yarn generate
