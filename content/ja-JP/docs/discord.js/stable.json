@@ -160,7 +160,7 @@
   "Emitted whenever a guild is deleted/left.": "Emitted whenever a guild is deleted/left.",
   "The guild that was deleted": "The guild that was deleted",
   "Emitted whenever a guild integration is updated": "Emitted whenever a guild integration is updated",
-  "The guild whose integrations were updated": "The guild whose integrations were updated",
+  "The guild whose integrations were updated": "他サービスとの統合が更新されたギルド。",
   "Emitted whenever a chunk of guild members is received (all members come from the same guild).": "Emitted whenever a chunk of guild members is received (all members come from the same guild).",
   "The members in the chunk": "The members in the chunk",
   "The guild related to the member chunk": "The guild related to the member chunk",
