@@ -1061,7 +1061,7 @@
   "The name of the new channel": "The name of the new channel",
   "The type of the new channel, one of `text`, `voice`, `category`, `news`, or `store`. **(deprecated, use options)**\nAlternatively options for the new channel, overriding the following parameters.": "The type of the new channel, one of `text`, `voice`, `category`, `news`, or `store`. **(deprecated, use options)**\nAlternatively options for the new channel, overriding the following parameters.",
   "Permission overwrites **(deprecated, use options)**": "Permission overwrites **(deprecated, use options)**",
-  "Reason for creating this channel **(deprecated, use options)**": "Reason for creating this channel **(deprecated, use options)**",
+  "Reason for creating this channel **(deprecated, use options)**": "このチャンネルを作成した理由 **(非推奨、オプションを利用してください。)**",
   "Batch-updates the guild's channels' positions.": "Batch-updates the guild's channels' positions.",
   "Channel positions to update": "チャンネルの位置を更新します。",
   "Edits the guild's embed.": "Edits the guild's embed.",
