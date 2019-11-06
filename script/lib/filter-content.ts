@@ -20,27 +20,26 @@ const filter = (document: Document): Sentences => {
   document.classes.forEach(_class => {
     add(_class.description)
 
-    _class.construct && _class.construct.params &&
-    _class.construct.params.forEach(param => {
+    _class.construct?.params?.forEach(param => {
       add(param.description)
     })
 
-    _class.props && _class.props.forEach(prop => {
+    _class.props?.forEach(prop => {
       add(prop.description)
     })
 
-    _class.methods && _class.methods.forEach(method => {
+    _class.methods?.forEach(method => {
       add(method.description)
 
-      method.params && method.params.forEach(param => {
+      method.params?.forEach(param => {
         add(param.description)
       })
     })
 
-    _class.events && _class.events.forEach(event => {
+    _class.events?.forEach(event => {
       add(event.description)
 
-      event.params && event.params.forEach(param => {
+      event.params?.forEach(param => {
         add(param.description)
       })
     })
@@ -49,14 +48,14 @@ const filter = (document: Document): Sentences => {
   document.interfaces.forEach(_interface => {
     add(_interface.description)
 
-    _interface.props && _interface.props.forEach(prop => {
+    _interface.props?.forEach(prop => {
       add(prop.description)
     })
 
     _interface.methods.forEach(method => {
       add(method.description)
 
-      method.params && method.params.forEach(param => {
+      method.params?.forEach(param => {
         add(param.description)
       })
     })
@@ -65,7 +64,7 @@ const filter = (document: Document): Sentences => {
   document.typedefs.forEach(typedef => {
     add(typedef.description)
 
-    typedef.props && typedef.props.forEach(prop => {
+    typedef.props?.forEach(prop => {
       add(prop.description)
     })
   })
