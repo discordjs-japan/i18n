@@ -7,7 +7,6 @@
     ],
     "strict": true,
     "strictNullChecks": true,
-    "noUnusedLocals": true,
     "noImplicitAny": true
   }
 }
