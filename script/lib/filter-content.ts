@@ -34,6 +34,8 @@ const filter = (document: Document): Sentences => {
       method.params?.forEach(param => {
         add(param.description)
       })
+
+      add(method.returns?.description)
     })
 
     _class.events?.forEach(event => {
@@ -67,6 +69,8 @@ const filter = (document: Document): Sentences => {
     typedef.props?.forEach(prop => {
       add(prop.description)
     })
+
+    add(typedef.returns?.description)
   })
 
   return sentences

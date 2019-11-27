@@ -30,6 +30,9 @@ export interface Class {
     params?: Array<Object<{
       description: string // description
     }>>
+    returns?: Object<{
+      description?: string // description
+    }>
   }>>
   events?: Array<Object<{
     description?: string // description
@@ -58,6 +61,9 @@ export interface Typedef {
   props?: Array<Object<{
     description: string // description
   }>>
+  returns?: Object<{
+    description?: string // description
+  }>
 }
 
 export interface Document {
