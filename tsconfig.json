@@ -7,6 +7,8 @@
     ],
     "strict": true,
     "strictNullChecks": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   }
 }
