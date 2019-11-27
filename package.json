@@ -5,8 +5,8 @@
     "build": "npm-run-all build:* generate",
     "build:stats": "ts-node script/stats.ts",
     "generate": "ts-node script/generate.ts",
-    "test": "npm-run-all test-type",
-    "test-type": "tsc --noEmit script/test/document-types.ts"
+    "test": "npm-run-all test:*",
+    "test:type": "ts-node script/test/document-types.ts"
   },
   "dependencies": {
     "del": "^5.1.0",
