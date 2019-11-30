@@ -2,15 +2,15 @@
   {
     "name": "Japanese",
     "code": "ja",
-    "phrases": "72724",
-    "translated": "149",
+    "phrases": "74352",
+    "translated": "150",
     "approved": "0",
-    "words": "776618",
-    "words_translated": "2883",
+    "words": "789719",
+    "words_translated": "4016",
     "words_approved": "0",
     "translated_progress": 0,
     "approved_progress": 0,
-    "qa_issues": 6,
+    "qa_issues": 8,
     "path": "ja-JP"
   }
 ]
