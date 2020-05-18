@@ -1594,7 +1594,7 @@
   "Represents a user on Discord.": "Represents a user on Discord.",
   "The data for the user": "The data for the user",
   "The presence of this user": "The presence of this user",
-  "Represents a guild voice channel on Discord.": "Represents a guild voice channel on Discord.",
+  "Represents a guild voice channel on Discord.": "Discord上のギルドボイスチャンネルを表します。",
   "The bitrate of this voice channel": "The bitrate of this voice channel",
   "The maximum amount of users allowed in this channel - 0 means unlimited.": "The maximum amount of users allowed in this channel - 0 means unlimited.",
   "The members in this voice channel": "The members in this voice channel",
