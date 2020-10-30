@@ -1936,7 +1936,7 @@
   "Options for setting an activity": "Options for setting an activity",
   "Twitch stream URL": "Twitch配信URL",
   "An array of enabled guild features, here are the possible values:\n* ANIMATED_ICON\n* BANNER\n* COMMERCE\n* DISCOVERABLE\n* FEATURABLE\n* INVITE_SPLASH\n* NEWS\n* PARTNERED\n* PUBLIC\n* PUBLIC_DISABLED\n* VANITY_URL\n* VERIFIED\n* VIP_REGIONS\n* WELCOME_SCREEN_ENABLED": "An array of enabled guild features, here are the possible values:\n* ANIMATED_ICON\n* BANNER\n* COMMERCE\n* DISCOVERABLE\n* FEATURABLE\n* INVITE_SPLASH\n* NEWS\n* PARTNERED\n* PUBLIC\n* PUBLIC_DISABLED\n* VANITY_URL\n* VERIFIED\n* VIP_REGIONS\n* WELCOME_SCREEN_ENABLED",
-  "The type of premium tier:\n* 0: NONE\n* 1: TIER_1\n* 2: TIER_2\n* 3: TIER_3": "The type of premium tier:\n* 0: NONE\n* 1: TIER_1\n* 2: TIER_2\n* 3: TIER_3",
+  "The type of premium tier:\n* 0: NONE\n* 1: TIER_1\n* 2: TIER_2\n* 3: TIER_3": "ブーストレベルを示すための型:\n* 0: NONE\n* 1: TIER_1\n* 2: TIER_2\n* 3: TIER_3",
   "An object containing information about a guild member's ban.": "ギルドのメンバーのBANに関する情報を含むオブジェクト。",
   "User that was banned": "User that was banned",
   "Reason the user was banned": "ユーザーがBANされた理由",
