@@ -1737,7 +1737,7 @@
   "Resolves a BufferResolvable to a Buffer or a Stream.": "Resolves a BufferResolvable to a Buffer or a Stream.",
   "The buffer or stream resolvable to resolve": "The buffer or stream resolvable to resolve",
   "Resolves a BufferResolvable to a Buffer.": "Resolves a BufferResolvable to a Buffer.",
-  "Data structure that makes it easy to calculate intents.": "Data structure that makes it easy to calculate intents.",
+  "Data structure that makes it easy to calculate intents.": "インテントの計算を容易にするデータ構造。",
   "Numeric websocket intents. All available properties:\n* `GUILDS`\n* `GUILD_MEMBERS`\n* `GUILD_BANS`\n* `GUILD_EMOJIS`\n* `GUILD_INTEGRATIONS`\n* `GUILD_WEBHOOKS`\n* `GUILD_INVITES`\n* `GUILD_VOICE_STATES`\n* `GUILD_PRESENCES`\n* `GUILD_MESSAGES`\n* `GUILD_MESSAGE_REACTIONS`\n* `GUILD_MESSAGE_TYPING`\n* `DIRECT_MESSAGES`\n* `DIRECT_MESSAGE_REACTIONS`\n* `DIRECT_MESSAGE_TYPING`": "Numeric websocket intents. All available properties:\n* `GUILDS`\n* `GUILD_MEMBERS`\n* `GUILD_BANS`\n* `GUILD_EMOJIS`\n* `GUILD_INTEGRATIONS`\n* `GUILD_WEBHOOKS`\n* `GUILD_INVITES`\n* `GUILD_VOICE_STATES`\n* `GUILD_PRESENCES`\n* `GUILD_MESSAGES`\n* `GUILD_MESSAGE_REACTIONS`\n* `GUILD_MESSAGE_TYPING`\n* `DIRECT_MESSAGES`\n* `DIRECT_MESSAGE_REACTIONS`\n* `DIRECT_MESSAGE_TYPING`",
   "Bitfield representing all privileged intents": "Bitfield representing all privileged intents",
   "Bitfield representing all intents combined": "Bitfield representing all intents combined",
