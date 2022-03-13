@@ -1,4 +1,4 @@
-import { got } from 'got'
+import got from 'got'
 import * as fs from 'fs'
 import * as path from 'path'
 import * as assert from 'assert'
@@ -10,7 +10,7 @@ interface LocaleStats {
   [others: string]: any;
 }
 
-got.post('/api/project/discordjs/status', {
+got.post('api/project/discordjs/status', {
   prefixUrl: 'https://api.crowdin.com',
   searchParams: {
     json: true,
