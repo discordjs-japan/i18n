@@ -1,7 +1,11 @@
 files:
+  - source: /content/en-US/docs/builders/*.json
+    translation: /content/%locale%/docs/builders/%original_file_name%
+  - source: /content/en-US/docs/collection/*.json
+    translation: /content/%locale%/docs/collection/%original_file_name%
   - source: /content/en-US/docs/discord.js/*.json
     translation: /content/%locale%/docs/discord.js/%original_file_name%
-  - source: /content/en-US/docs/Commando/*.json
-    translation: /content/%locale%/docs/Commando/%original_file_name%
-  - source: /content/en-US/docs/RPC/*.json
-    translation: /content/%locale%/docs/RPC/%original_file_name%
+  - source: /content/en-US/docs/rest/*.json
+    translation: /content/%locale%/docs/rest/%original_file_name%
+  - source: /content/en-US/docs/voice/*.json
+    translation: /content/%locale%/docs/voice/%original_file_name%
