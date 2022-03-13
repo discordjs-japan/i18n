@@ -47,7 +47,7 @@ const filter = (document: Document): Sentences => {
     })
   })
 
-  document.interfaces.forEach(_interface => {
+  document.interfaces?.forEach(_interface => {
     add(_interface.description)
 
     _interface.props?.forEach(prop => {

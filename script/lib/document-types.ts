@@ -23,12 +23,12 @@ export interface Class {
     }>>
   }>
   props?: Array<Object<{
-    description: string // description
+    description?: string // description
   }>>
   methods?: Array<Object<{
     description?: string // description
     params?: Array<Object<{
-      description: string // description
+      description?: string // description
     }>>
     returns?: Object<{
       description?: string // description
@@ -45,10 +45,10 @@ export interface Class {
 export interface Interface {
   description: string // description
   props?: Array<Object<{
-    description: string // description
+    description?: string // description
   }>>
   methods: Array<Object<{
-    description: string // description
+    description?: string // description
     examples?: string[] // examples
     params?: Array<Object<{
       description: string // description
@@ -59,11 +59,12 @@ export interface Interface {
 export interface Typedef {
   description?: string // description
   props?: Array<Object<{
-    description: string // description
+    description?: string // description
   }>>
   returns?: Object<{
     description?: string // description
   }>
+  params?: Object<{ description?: string }>
 }
 
 export interface Document {
@@ -72,7 +73,7 @@ export interface Document {
     [id: string]: Object<Custom>
   }
   classes: Object<Class>[]
-  interfaces: Object<Interface>[]
+  interfaces?: Object<Interface>[]
   typedefs: Object<Typedef>[]
-  externals: Object<{}>
+  // externals?: Object<{}>
 }
