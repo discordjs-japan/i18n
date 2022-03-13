@@ -614,7 +614,7 @@
   "Manages API methods for users who reacted to a reaction and stores their cache.": "Manages API methods for users who reacted to a reaction and stores their cache.",
   "The reaction that this manager belongs to": "The reaction that this manager belongs to",
   "The cache of this manager": "The cache of this manager",
-  "Fetches the users that gave this reaction. Resolves with a collection of users, mapped by their IDs.": "Fetches the users that gave this reaction. Resolves with a collection of users, mapped by their IDs.",
+  "Fetches all the users that gave this reaction. Resolves with a collection of users, mapped by their IDs.": "Fetches all the users that gave this reaction. Resolves with a collection of users, mapped by their IDs.",
   "Options for fetching the users": "Options for fetching the users",
   "The maximum amount of users to fetch, defaults to 100": "The maximum amount of users to fetch, defaults to 100",
   "Limit fetching users to those with an id lower than the supplied id": "Limit fetching users to those with an id lower than the supplied id",
