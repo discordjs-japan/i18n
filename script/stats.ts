@@ -1,4 +1,4 @@
-import * as got from 'got'
+import { got } from 'got'
 import * as fs from 'fs'
 import * as path from 'path'
 import * as assert from 'assert'
@@ -11,23 +11,23 @@ interface LocaleStats {
 }
 
 got.post('/api/project/discordjs/status', {
-  json: true,
-  baseUrl: 'https://api.crowdin.com',
-  query: {
+  prefixUrl: 'https://api.crowdin.com',
+  searchParams: {
     json: true,
     key: process.env.CROWDIN_APIKEY
-  }
-}).then(res => {
-  const data: LocaleStats[] = res.body
-  const stats = data.map(locale => {
-    const matched = contents.filter(code => code.startsWith(locale.code))
-    assert(matched.length < 2,
-      `Invalid locale code: ${locale.code}\n` +
-      `\tMatched: ${path.join(', ')}`)
-    return { ...locale, path: matched[0] }
-  })
-  fs.writeFileSync(
-    path.join(__dirname, '../stats.json'),
-    JSON.stringify(stats, null, 2)
-  )
+  },
 })
+  .json<LocaleStats[]>()
+  .then(data => {
+    const stats = data.map(locale => {
+      const matched = contents.filter(code => code.startsWith(locale.code))
+      assert(matched.length < 2,
+        `Invalid locale code: ${locale.code}\n` +
+        `\tMatched: ${path.join(', ')}`)
+      return { ...locale, path: matched[0] }
+    })
+    fs.writeFileSync(
+      path.join(__dirname, '../stats.json'),
+      JSON.stringify(stats, null, 2)
+    )
+  })

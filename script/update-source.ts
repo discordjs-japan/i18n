@@ -1,6 +1,6 @@
-import * as simplegit from 'simple-git/promise'
+import simpleGit from 'simple-git'
 
-const git = simplegit().outputHandler((_, stdout, stderr) => {
+const git = simpleGit().outputHandler((_, stdout, stderr) => {
   stdout.pipe(process.stdout)
   stderr.pipe(process.stderr)
 })
